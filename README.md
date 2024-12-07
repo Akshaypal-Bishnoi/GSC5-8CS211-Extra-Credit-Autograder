@@ -208,7 +208,7 @@ python3 autograder.py
 - This will run your code and check for correctness based on **given** test cases.
 - Your Makefile should have a clean, and a "make <part-num>" function.
     - For example, the Makefile for the first part should have clean, and ```first``` function.
-
+- If the autograder marks a testcase as wrong, you can look at your program in the output folder, and compare it to the expected text file in the expected_output folder.
 ```
 make clean
 make first
