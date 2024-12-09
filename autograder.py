@@ -15,12 +15,12 @@ def partfour():
        return
     print("make fourth - success")
     # testing program
-    testcases = subprocess.run("./fourth ../../testcases/fourth/input/input1.txt &> ../../testcases/fourth/output/output1.txt", shell=True)
-    testcases = subprocess.run("./fourth ../../testcases/fourth/input/input2.txt &> ../../testcases/fourth/output/output2.txt", shell=True)
-    testcases = subprocess.run("./fourth ../../testcases/fourth/input/input3.txt &> ../../testcases/fourth/output/output3.txt", shell=True)
-    testcases = subprocess.run("./fourth ../../testcases/fourth/input/input4.txt &> ../../testcases/fourth/output/output4.txt", shell=True)
-    testcases = subprocess.run("./fourth ../../testcases/fourth/input/input5.txt &> ../../testcases/fourth/output/output5.txt", shell=True)
-    testcases = subprocess.run("./fourth ../../testcases/fourth/input/input6.txt &> ../../testcases/fourth/output/output6.txt", shell=True)
+    testcases = subprocess.run("./fourth ../../testcases/fourth/input/input1.txt > ../../testcases/fourth/output/output1.txt", shell=True)
+    testcases = subprocess.run("./fourth ../../testcases/fourth/input/input2.txt > ../../testcases/fourth/output/output2.txt", shell=True)
+    testcases = subprocess.run("./fourth ../../testcases/fourth/input/input3.txt > ../../testcases/fourth/output/output3.txt", shell=True)
+    testcases = subprocess.run("./fourth ../../testcases/fourth/input/input4.txt > ../../testcases/fourth/output/output4.txt", shell=True)
+    testcases = subprocess.run("./fourth ../../testcases/fourth/input/input5.txt > ../../testcases/fourth/output/output5.txt", shell=True)
+    testcases = subprocess.run("./fourth ../../testcases/fourth/input/input6.txt > ../../testcases/fourth/output/output6.txt", shell=True)
 
     compare = subprocess.run("diff ../../testcases/fourth/expected_output/expected1.txt ../../testcases/fourth/output/output1.txt",shell=True, stdout=subprocess.PIPE)
     if compare.returncode != 0:
@@ -69,11 +69,11 @@ def partfive():
        return
     print("make five - success")
     # Tests
-    testcases = subprocess.run("./fifth ../../testcases/fifth/input/input1.txt &> ../../testcases/fifth/output/output1.txt", shell=True)
-    testcases = subprocess.run("./fifth ../../testcases/fifth/input/input2.txt &> ../../testcases/fifth/output/output2.txt", shell=True)
-    testcases = subprocess.run("./fifth ../../testcases/fifth/input/input3.txt &> ../../testcases/fifth/output/output3.txt", shell=True)
-    testcases = subprocess.run("./fifth ../../testcases/fifth/input/input4.txt &> ../../testcases/fifth/output/output4.txt", shell=True)
-    testcases = subprocess.run("./fifth ../../testcases/fifth/input/input5.txt &> ../../testcases/fifth/output/output5.txt", shell=True)
+    testcases = subprocess.run("./fifth ../../testcases/fifth/input/input1.txt > ../../testcases/fifth/output/output1.txt", shell=True)
+    testcases = subprocess.run("./fifth ../../testcases/fifth/input/input2.txt > ../../testcases/fifth/output/output2.txt", shell=True)
+    testcases = subprocess.run("./fifth ../../testcases/fifth/input/input3.txt > ../../testcases/fifth/output/output3.txt", shell=True)
+    testcases = subprocess.run("./fifth ../../testcases/fifth/input/input4.txt > ../../testcases/fifth/output/output4.txt", shell=True)
+    testcases = subprocess.run("./fifth ../../testcases/fifth/input/input5.txt > ../../testcases/fifth/output/output5.txt", shell=True)
     compare = subprocess.run("diff ../../testcases/fifth/expected_output/expected1.txt ../../testcases/fifth/output/output1.txt",shell=True, stdout=subprocess.PIPE)
     if compare.returncode != 0:
         print("Testcase 1 - failed ✗ ")
@@ -115,11 +115,11 @@ def partsix():
        return
     print("make six - success")
     # Tests
-    testcases = subprocess.run("./sixth ../../testcases/sixth/input/input1.txt &> ../../testcases/sixth/output/output1.txt", shell=True)
-    testcases = subprocess.run("./sixth ../../testcases/sixth/input/input2.txt &> ../../testcases/sixth/output/output2.txt", shell=True)
-    testcases = subprocess.run("./sixth ../../testcases/sixth/input/input3.txt &> ../../testcases/sixth/output/output3.txt", shell=True)
-    testcases = subprocess.run("./sixth ../../testcases/sixth/input/input4.txt &> ../../testcases/sixth/output/output4.txt", shell=True)
-    testcases = subprocess.run("./sixth ../../testcases/sixth/input/input5.txt &> ../../testcases/sixth/output/output5.txt", shell=True)
+    testcases = subprocess.run("./sixth ../../testcases/sixth/input/input1.txt > ../../testcases/sixth/output/output1.txt", shell=True)
+    testcases = subprocess.run("./sixth ../../testcases/sixth/input/input2.txt > ../../testcases/sixth/output/output2.txt", shell=True)
+    testcases = subprocess.run("./sixth ../../testcases/sixth/input/input3.txt > ../../testcases/sixth/output/output3.txt", shell=True)
+    testcases = subprocess.run("./sixth ../../testcases/sixth/input/input4.txt > ../../testcases/sixth/output/output4.txt", shell=True)
+    testcases = subprocess.run("./sixth ../../testcases/sixth/input/input5.txt > ../../testcases/sixth/output/output5.txt", shell=True)
     compare = subprocess.run("diff ../../testcases/sixth/expected_output/expected1.txt ../../testcases/sixth/output/output1.txt",shell=True, stdout=subprocess.PIPE)
     if compare.returncode != 0:
         print("Testcase 1 - failed ✗ ")
@@ -160,11 +160,11 @@ def partseven():
        return
     print("make seven - success")
     # Tests
-    testcases = subprocess.run("./seventh ../../testcases/seventh/input/input1.txt &> ../../testcases/seventh/output/output1.txt", shell=True)
-    testcases = subprocess.run("./seventh ../../testcases/seventh/input/input2.txt &> ../../testcases/seventh/output/output2.txt", shell=True)
-    testcases = subprocess.run("./seventh ../../testcases/seventh/input/input3.txt &> ../../testcases/seventh/output/output3.txt", shell=True)
-    testcases = subprocess.run("./seventh ../../testcases/seventh/input/input4.txt &> ../../testcases/seventh/output/output4.txt", shell=True)
-    testcases = subprocess.run("./seventh ../../testcases/seventh/input/input5.txt &> ../../testcases/seventh/output/output5.txt", shell=True)
+    testcases = subprocess.run("./seventh ../../testcases/seventh/input/input1.txt > ../../testcases/seventh/output/output1.txt", shell=True)
+    testcases = subprocess.run("./seventh ../../testcases/seventh/input/input2.txt > ../../testcases/seventh/output/output2.txt", shell=True)
+    testcases = subprocess.run("./seventh ../../testcases/seventh/input/input3.txt > ../../testcases/seventh/output/output3.txt", shell=True)
+    testcases = subprocess.run("./seventh ../../testcases/seventh/input/input4.txt > ../../testcases/seventh/output/output4.txt", shell=True)
+    testcases = subprocess.run("./seventh ../../testcases/seventh/input/input5.txt > ../../testcases/seventh/output/output5.txt", shell=True)
     compare = subprocess.run("diff ../../testcases/seventh/expected_output/expected1.txt ../../testcases/seventh/output/output1.txt",shell=True, stdout=subprocess.PIPE)
     if compare.returncode != 0:
         print("Testcase 1 - failed ✗ ")
@@ -205,11 +205,11 @@ def parteight():
        return
     print("make seven - success")
     # Tests
-    testcases = subprocess.run("./eighth ../../testcases/eighth/input/input1.txt &> ../../testcases/eighth/output/output1.txt", shell=True)
-    testcases = subprocess.run("./eighth ../../testcases/eighth/input/input2.txt &> ../../testcases/eighth/output/output2.txt", shell=True)
-    testcases = subprocess.run("./eighth ../../testcases/eighth/input/input3.txt &> ../../testcases/eighth/output/output3.txt", shell=True)
-    testcases = subprocess.run("./eighth ../../testcases/eighth/input/input4.txt &> ../../testcases/eighth/output/output4.txt", shell=True)
-    testcases = subprocess.run("./eighth ../../testcases/eighth/input/input5.txt &> ../../testcases/eighth/output/output5.txt", shell=True)
+    testcases = subprocess.run("./eighth ../../testcases/eighth/input/input1.txt > ../../testcases/eighth/output/output1.txt", shell=True)
+    testcases = subprocess.run("./eighth ../../testcases/eighth/input/input2.txt > ../../testcases/eighth/output/output2.txt", shell=True)
+    testcases = subprocess.run("./eighth ../../testcases/eighth/input/input3.txt > ../../testcases/eighth/output/output3.txt", shell=True)
+    testcases = subprocess.run("./eighth ../../testcases/eighth/input/input4.txt > ../../testcases/eighth/output/output4.txt", shell=True)
+    testcases = subprocess.run("./eighth ../../testcases/eighth/input/input5.txt > ../../testcases/eighth/output/output5.txt", shell=True)
     compare = subprocess.run("diff ../../testcases/eighth/expected_output/expected1.txt ../../testcases/eighth/output/output1.txt",shell=True, stdout=subprocess.PIPE)
     if compare.returncode != 0:
         print("Testcase 1 - failed ✗ ")
@@ -251,11 +251,11 @@ def partone():
        return
     print("make first - success")
     # Tests
-    testcases = subprocess.run("./first ../../testcases/first/input/input1.txt &> ../../testcases/first/output/output1.txt", shell=True)
-    testcases = subprocess.run("./first ../../testcases/first/input/input2.txt &> ../../testcases/first/output/output2.txt", shell=True)
-    testcases = subprocess.run("./first ../../testcases/first/input/input3.txt &> ../../testcases/first/output/output3.txt", shell=True)
-    testcases = subprocess.run("./first ../../testcases/first/input/input4.txt &> ../../testcases/first/output/output4.txt", shell=True)
-    testcases = subprocess.run("./first ../../testcases/first/input/input5.txt &> ../../testcases/first/output/output5.txt", shell=True)
+    testcases = subprocess.run("./first ../../testcases/first/input/input1.txt > ../../testcases/first/output/output1.txt", shell=True)
+    testcases = subprocess.run("./first ../../testcases/first/input/input2.txt > ../../testcases/first/output/output2.txt", shell=True)
+    testcases = subprocess.run("./first ../../testcases/first/input/input3.txt > ../../testcases/first/output/output3.txt", shell=True)
+    testcases = subprocess.run("./first ../../testcases/first/input/input4.txt > ../../testcases/first/output/output4.txt", shell=True)
+    testcases = subprocess.run("./first ../../testcases/first/input/input5.txt > ../../testcases/first/output/output5.txt", shell=True)
     compare = subprocess.run("diff ../../testcases/first/expected_output/expected1.txt ../../testcases/first/output/output1.txt",shell=True, stdout=subprocess.PIPE)
     if compare.returncode != 0:
         print("Testcase 1 - failed ✗ ")
@@ -297,11 +297,11 @@ def parttwo():
        return
     print("make second - success")
     # Tests
-    testcases = subprocess.run("./second ../../testcases/second/input/input1.txt &> ../../testcases/second/output/output1.txt", shell=True)
-    testcases = subprocess.run("./second ../../testcases/second/input/input2.txt &> ../../testcases/second/output/output2.txt", shell=True)
-    testcases = subprocess.run("./second ../../testcases/second/input/input3.txt &> ../../testcases/second/output/output3.txt", shell=True)
-    testcases = subprocess.run("./second ../../testcases/second/input/input4.txt &> ../../testcases/second/output/output4.txt", shell=True)
-    testcases = subprocess.run("./second ../../testcases/second/input/input5.txt &> ../../testcases/second/output/output5.txt", shell=True)
+    testcases = subprocess.run("./second ../../testcases/second/input/input1.txt > ../../testcases/second/output/output1.txt", shell=True)
+    testcases = subprocess.run("./second ../../testcases/second/input/input2.txt > ../../testcases/second/output/output2.txt", shell=True)
+    testcases = subprocess.run("./second ../../testcases/second/input/input3.txt > ../../testcases/second/output/output3.txt", shell=True)
+    testcases = subprocess.run("./second ../../testcases/second/input/input4.txt > ../../testcases/second/output/output4.txt", shell=True)
+    testcases = subprocess.run("./second ../../testcases/second/input/input5.txt > ../../testcases/second/output/output5.txt", shell=True)
     compare = subprocess.run("diff ../../testcases/second/expected_output/expected1.txt ../../testcases/second/output/output1.txt",shell=True, stdout=subprocess.PIPE)
     if compare.returncode != 0:
         print("Testcase 1 - failed ✗ ")
@@ -342,11 +342,11 @@ def partthree():
        return
     print("make third - success")
     # Tests
-    testcases = subprocess.run("./third ../../testcases/third/input/input1.txt &> ../../testcases/third/output/output1.txt", shell=True)
-    testcases = subprocess.run("./third ../../testcases/third/input/input2.txt &> ../../testcases/third/output/output2.txt", shell=True)
-    testcases = subprocess.run("./third ../../testcases/third/input/input3.txt &> ../../testcases/third/output/output3.txt", shell=True)
-    testcases = subprocess.run("./third ../../testcases/third/input/input4.txt &> ../../testcases/third/output/output4.txt", shell=True)
-    testcases = subprocess.run("./third ../../testcases/third/input/input5.txt &> ../../testcases/third/output/output5.txt", shell=True)
+    testcases = subprocess.run("./third ../../testcases/third/input/input1.txt > ../../testcases/third/output/output1.txt", shell=True)
+    testcases = subprocess.run("./third ../../testcases/third/input/input2.txt > ../../testcases/third/output/output2.txt", shell=True)
+    testcases = subprocess.run("./third ../../testcases/third/input/input3.txt > ../../testcases/third/output/output3.txt", shell=True)
+    testcases = subprocess.run("./third ../../testcases/third/input/input4.txt > ../../testcases/third/output/output4.txt", shell=True)
+    testcases = subprocess.run("./third ../../testcases/third/input/input5.txt > ../../testcases/third/output/output5.txt", shell=True)
     compare = subprocess.run("diff ../../testcases/third/expected_output/expected1.txt ../../testcases/third/output/output1.txt",shell=True, stdout=subprocess.PIPE)
     if compare.returncode != 0:
         print("Testcase 1 - failed ✗ ")
