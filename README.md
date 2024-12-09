@@ -1,3 +1,9 @@
+**errata**
+
+- 12/9/24: autograder updated for redirection issues. You can either pull, or replace all instances of ```&>``` with ```>```
+
+---
+
 # Extra Credit Autograder
 
 - This is the autograder for the Extra Credit Assignment. Instead of providing a tar file to scp to the ilabs, I provided you with a github repository to make things easier. 
